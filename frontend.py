@@ -45,17 +45,19 @@ for item in images:
     time.sleep(4)
 
 image_holder2.empty()
+st.markdown(
+        "<h1 style = 'text-align:center; color:white;'>File Scrapping for Email</h1>", unsafe_allow_html=True)
 option = st.selectbox('',
                       ('Project\tdescription', 'main project'))
 if(option == "Project\tdescription"):
     st.markdown(
-        "<h1 style = 'text-align:center; color:white;'>Steps To Follow</h1>", unsafe_allow_html=True)
+        "<h2 style = 'text-align:center; color:white;'>Steps To Follow</h2>", unsafe_allow_html=True)
     st.markdown(
         "<h3 style = ' color:white;'>Step 1: Select main project from the drop down .</h3>", unsafe_allow_html=True)
     st.markdown(
         "<h3 style = 'color:white;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:white;'>Step 3: Select file which is to be used</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:white;'>Step 3: Select file which is to be used for Scrapping.(you can download the file from <a href='https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv'> here(https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv)</a>)</h3>", unsafe_allow_html=True)
     st.markdown(
         "<h3 style = 'color:white;'>This project basically is a sorting app. which sort the email from large files which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
 
