@@ -51,15 +51,15 @@ option = st.selectbox('',
                       ('Project\tdescription', 'main project'))
 if(option == "Project\tdescription"):
     st.markdown(
-        "<h2 style = 'text-align:center; color:white;'>Steps To Follow</h2>", unsafe_allow_html=True)
+        "<h2 style = 'text-align:center; color:blue;'>Steps To Follow</h2>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:white;'>Step 1: Select main project from the drop down .</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:blue;'>Step 1: Select main project from the drop down .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = 'color:white;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
+        "<h3 style = 'color:blue;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:white;'>Step 3: Select file which is to be used for Scrapping. (you can download the sample file from  <a href='https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv'> here .</a>)</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:blue;'>Step 3: Select file which is to be used for Scrapping. (you can download the sample file from  <a href='https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv'> here .</a>)</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = 'color:white;'>This project basically is a scraping app. which scrap emails from large and complex file which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
+        "<h3 style = 'color:blue;'>This project basically is a scraping app. which scrap emails from large and complex file which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
 
 else:
     gmail = []
@@ -73,7 +73,7 @@ else:
                 gmail.append(mail.decode().replace("\r\n", ""))
 
             st.markdown(
-                "<h1 style = ' color:white;margin-left:40%;'>Emails</h1>", unsafe_allow_html=True)
+                "<h1 style = ' color:blue;margin-left:40%;'>Emails</h1>", unsafe_allow_html=True)
             for mail in gmail:
 
                 ele = re.findall(
@@ -89,9 +89,10 @@ else:
                 col2.text(valid[i])
 
             st.markdown(
-                "<h1 style = 'text-align:center; color:white;'>File Contents</h1>", unsafe_allow_html=True)
+                "<h1 style = 'text-align:center; color:blue;'>File Contents</h1>", unsafe_allow_html=True)
             for mail in gmail:
                 st.write(mail)
 
         except:
-            st.write("invalid file format")
+            st.markdown(
+                "<h1 style = 'text-align:center; color:blue;'>Invalid File Format.</h1>", unsafe_allow_html=True)
