@@ -1,5 +1,2 @@
-pip==22.2.1
 streamlit==0.68.1
-requests==2.7.0
-beautifulsoup4==4.9.3
-turtle
+turtle==0.1
