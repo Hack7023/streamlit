@@ -1,7 +1,7 @@
 
 import streamlit as st
 import time
-import re
+import regex as re
 import base64
 
 LOGO_IMAGE = "giphy.gif"
