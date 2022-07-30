@@ -1,5 +1,5 @@
 streamlit==0.68.1
 requests==2.7.0
 beautifulsoup4==4.9.3
-turtle==0.3.2
+turtle==0.0.2
 tkinter==8.6.12 
