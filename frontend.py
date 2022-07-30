@@ -46,7 +46,7 @@ for item in images:
 
 image_holder2.empty()
 st.markdown(
-        "<h1 style = 'text-align:center; color:white;'>File Scrapping for Email</h1>", unsafe_allow_html=True)
+        "<h1 style = 'text-align:center; color:blue;'>File Scrapping for Email</h1>", unsafe_allow_html=True)
 option = st.selectbox('',
                       ('Project\tdescription', 'main project'))
 if(option == "Project\tdescription"):
