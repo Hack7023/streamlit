@@ -1,2 +1,4 @@
-streamlit==0.68.1
-regex==2022.7.25 
+streamlit
+regex
+time
+base64
