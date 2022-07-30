@@ -1,6 +1,6 @@
-you can visit the site at https://taskstreamlit.herokuapp.com/
-this is a python web program using streamlit.
-Steps To Follow
+you can visit the site at https://taskstreamlit.herokuapp.com/ \n
+this is a python web program using streamlit.\n
+Steps To Follow\n
 Step 1: Select main project from the drop down .
 Step 2: Click on Browse files .
 Step 3: Select file which is to be used for Scrapping.(a sample csv file is attached to the project).
