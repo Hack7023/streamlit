@@ -1,14 +1,10 @@
-import cv2
-import streamlit as st
+# Python program to draw square
+# using Turtle Programming
+import turtle
+skk = turtle.Turtle()
 
-st.title("Webcam Application")
-run = st.checkbox('Run')
-FRAME_WINDOW = st.image([])
-cam = cv2.VideoCapture(1)
-
-while run:
-    ret, frame = cam.read()
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    FRAME_WINDOW.image(frame)
-else:
-    st.write('Stopped')
+for i in range(4):
+	skk.forward(50)
+	skk.right(90)
+	
+turtle.done()
