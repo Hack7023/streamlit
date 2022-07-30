@@ -49,15 +49,15 @@ option = st.selectbox('',
                       ('Project\tdescription', 'main project'))
 if(option == "Project\tdescription"):
     st.markdown(
-        "<h1 style = 'text-align:center; color:black;'>Steps To Follow</h1>", unsafe_allow_html=True)
+        "<h1 style = 'text-align:center; color:white;'>Steps To Follow</h1>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:black;'>Step 1: Select main project from the drop down .</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:white;'>Step 1: Select main project from the drop down .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = 'color:black;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
+        "<h3 style = 'color:white;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:black;'>Step 3: Select file which is to be used</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:white;'>Step 3: Select file which is to be used</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = 'color:black;'>This project basically is a sorting app. which sort the email from large files which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
+        "<h3 style = 'color:white;'>This project basically is a sorting app. which sort the email from large files which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
 
 else:
     gmail = []
@@ -71,7 +71,7 @@ else:
                 gmail.append(mail.decode().replace("\r\n", ""))
 
             st.markdown(
-                "<h1 style = ' color:black;margin-left:40%;'>Emails</h1>", unsafe_allow_html=True)
+                "<h1 style = ' color:white;margin-left:40%;'>Emails</h1>", unsafe_allow_html=True)
             for mail in gmail:
 
                 ele = re.findall(
@@ -87,7 +87,7 @@ else:
                 col2.text(valid[i])
 
             st.markdown(
-                "<h1 style = 'text-align:center; color:black;'>File Contents</h1>", unsafe_allow_html=True)
+                "<h1 style = 'text-align:center; color:white;'>File Contents</h1>", unsafe_allow_html=True)
             for mail in gmail:
                 st.write(mail)
 
