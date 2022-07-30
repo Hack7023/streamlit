@@ -1,4 +1,2 @@
-streamlit
-regex
-time
-base64
+streamlit==1.11.0
+regex==2022.7.25
