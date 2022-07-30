@@ -57,7 +57,7 @@ if(option == "Project\tdescription"):
     st.markdown(
         "<h3 style = 'color:white;'>Step 2: Click on Browse files .</h3>", unsafe_allow_html=True)
     st.markdown(
-        "<h3 style = ' color:white;'>Step 3: Select file which is to be used for Scrapping.(you can download the file from <a href='https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv'> here(https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv)</a>)</h3>", unsafe_allow_html=True)
+        "<h3 style = ' color:white;'>Step 3: Select file which is to be used for Scrapping. (you can download the sample file from  <a href='https://github.com/Hack7023/streamlit/blob/main/100-contacts.csv'> here .</a>)</h3>", unsafe_allow_html=True)
     st.markdown(
         "<h3 style = 'color:white;'>This project basically is a sorting app. which sort the email from large files which is provided by user and the app will display the content on screen first it displays the email and then the file content.</h3>", unsafe_allow_html=True)
 
